@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Learning from Titanic Disaster? (Kaggle)</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Learning from Titanic Disaster? (Kaggle)">
+  <meta name="author" content="Vimal Kumar M">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Learning from Titanic Disaster? (Kaggle)</h1>
+    <h2>Developing Data Products - Coursera</h2>
+    <p>Vimal Kumar M<br/>Student</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Introduction</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li>Project is inspired by: 
+
+<ul>
+<li>Kaggale training <a href="https://www.kaggle.com/c/titanic-gettingStarted">Titanic: Machine Learning from Disaster?</a></li>
+<li>Tutorial by Trevor Stephens available <a href="http://trevorstephens.com/post/72916401642/titanic-getting-started-with-r">here</a></li>
+</ul></li>
+<li>In this project we must predict the fate of the passengers aboard the RMS Titanic, which famously sank in the Atlantic ocean during its maiden voyage from the UK to New York City after colliding with an iceberg.</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>How many passengers were there in RMS Titanic?</h2>
+  </hgroup>
+  <article data-timings="">
+    <table><thead>
+<tr>
+<th>Class</th>
+<th>Number of Passengers</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>First</td>
+<td>325</td>
+</tr>
+<tr>
+<td>Second</td>
+<td>285</td>
+</tr>
+<tr>
+<td>Third</td>
+<td>706</td>
+</tr>
+<tr>
+<td>Crew</td>
+<td>885</td>
+</tr>
+</tbody></table>
+
+<p>-Servivers vs Not Servivers</p>
+
+<table><thead>
+<tr>
+<th>Servived?</th>
+<th>Number of Passengers</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Servived</td>
+<td>711</td>
+</tr>
+<tr>
+<td>Not Servived</td>
+<td>1490</td>
+</tr>
+</tbody></table>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Does your chances of Serivival increased if you were 1st class?</h2>
+  </hgroup>
+  <article data-timings="">
+    <table><thead>
+<tr>
+<th>Servived?</th>
+<th>1st Class</th>
+<th>2nd Class</th>
+<th>3rd Class</th>
+<th>Crew</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Servived</td>
+<td>203</td>
+<td>118</td>
+<td>178</td>
+<td>212</td>
+</tr>
+<tr>
+<td>Not Servived</td>
+<td>122</td>
+<td>167</td>
+<td>528</td>
+<td>673</td>
+</tr>
+<tr>
+<td>total</td>
+<td>325</td>
+<td>285</td>
+<td>706</td>
+<td>885</td>
+</tr>
+</tbody></table>
+
+<ul>
+<li>So Rate of Servival of 1st class Vs 3rd Class is
+
+<ul>
+<li>First Class 62.4615385%</li>
+<li>Third Class 25.2124646%</li>
+</ul></li>
+</ul>
+
+<p>From the above result it is clearly evident that first class passenger had more chances winning than third calss passenger.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Hope you would like to travel in first class :)</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="http://projectaccesseasttn.org/thank-you/" alt=""> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Introduction'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='How many passengers were there in RMS Titanic?'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Does your chances of Serivival increased if you were 1st class?'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Hope you would like to travel in first class :)'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
